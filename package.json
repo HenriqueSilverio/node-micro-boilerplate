@@ -1,0 +1,30 @@
+{
+  "name": "node-micro-boilerplate",
+  "version": "1.0.0",
+  "description": "Minimal starter files to create a NodeJS app.",
+  "main": "./index.js",
+  "scripts": {
+    "start": "node --require dotenv/config ./index.js",
+    "debug": "nodemon --require dotenv/config ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HenriqueSilverio/node-micro-boilerplate.git"
+  },
+  "author": "Henrique Silvério",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "dotenv": "^8.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^1.19.2",
+    "prettier-eslint": "^9.0.0"
+  }
+}
