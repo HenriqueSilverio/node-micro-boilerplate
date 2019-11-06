@@ -2,10 +2,10 @@
   "name": "node-micro-boilerplate",
   "version": "1.0.0",
   "description": "Minimal starter files to create a NodeJS app.",
-  "main": "./index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node --require dotenv/config ./index.js",
-    "debug": "nodemon --require dotenv/config ./index.js",
+    "start": "node --require dotenv/config ./src/index.js",
+    "debug": "nodemon --require dotenv/config ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
