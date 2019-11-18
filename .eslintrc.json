@@ -12,6 +12,7 @@
     "ecmaVersion": 2018
   },
   "rules": {
-    "object-curly-spacing": ["error", "always"]
+    "object-curly-spacing": ["error", "always"],
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }]
   }
 }
