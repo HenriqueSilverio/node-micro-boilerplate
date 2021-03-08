@@ -1,5 +1,3 @@
-const { MONGO_URI } = require('./config')
+const { serviceName } = require('./config')
 
-console.log(`MongoDB: "${MONGO_URI}". \n`)
-
-console.log('Hello world! \n')
+console.log(`Starting ${serviceName}...`)
