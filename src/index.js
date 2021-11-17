@@ -1,3 +1,3 @@
 const { serviceName } = require('./config')
 
-console.log(`Starting ${serviceName}...`)
+process.stdout.write(`Starting ${serviceName}...`)
