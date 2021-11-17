@@ -1,3 +1,3 @@
-const { serviceName } = require('./config')
+import config from './config'
 
-process.stdout.write(`Starting ${serviceName}...`)
+process.stdout.write(`Starting ${config.serviceName}...`)

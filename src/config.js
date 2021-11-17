@@ -1,5 +1,7 @@
-const env = require('require-env')
+import env from 'require-env'
 
-module.exports = {
-  serviceName: env.require('SERVICE_NAME')
+const config = {
+  serviceName: env.require('SERVICE_NAME'),
 }
+
+export default config
