@@ -10,8 +10,10 @@ Dockerfile
 docker-compose.yml
 
 .editorconfig
+.eslintignore
 .eslintrc.json
 
+dist
 node_modules
 npm-debug.log
 yarn-debug.log
