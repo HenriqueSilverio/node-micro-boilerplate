@@ -2,15 +2,15 @@
   "name": "node-micro-boilerplate",
   "version": "1.0.0",
   "description": "Minimal starter files to create a NodeJS app.",
-  "type": "module",
   "engines": {
     "node": "^16.13.0",
     "npm": "^8.1.0"
   },
-  "main": "./src/index.js",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "node --experimental-specifier-resolution=node ./src/index.js",
-    "start:dev": "node --experimental-specifier-resolution=node --require dotenv/config ./src/index.js",
+    "build": "rm -rf dist && tsc",
+    "start": "node dist/index.js",
+    "start:dev": "ts-node-dev --require dotenv/config src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,10 +23,16 @@
     "require-env": "^0.2.1"
   },
   "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/node": "^16.11.9",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "dotenv": "^10.0.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.0.0",
     "eslint-plugin-import": "^2.25.3",
-    "nodemon": "^2.0.15"
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.2"
   }
 }
