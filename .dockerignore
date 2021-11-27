@@ -10,8 +10,14 @@ Dockerfile
 docker-compose.yml
 
 .editorconfig
+
+.eslintcache
 .eslintignore
 .eslintrc.json
+
+.husky
+.commitlintrc
+.lintstagedrc
 
 dist
 node_modules
