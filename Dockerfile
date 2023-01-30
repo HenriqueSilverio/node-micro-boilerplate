@@ -1,4 +1,4 @@
-FROM node:16.15.0-alpine@sha256:1a9a71ea86aad332aa7740316d4111ee1bd4e890df47d3b5eff3e5bded3b3d10 AS build
+FROM node:18.13.0-alpine@sha256:fda98168118e5a8f4269efca4101ee51dd5c75c0fe56d8eb6fad80455c2f5827 AS build
 
 USER node
 
@@ -10,9 +10,9 @@ WORKDIR /home/node
 
 COPY --chown=node:node ["package.json", "package-lock.json", "/home/node/"]
 
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
-FROM node:16.15.0-alpine@sha256:1a9a71ea86aad332aa7740316d4111ee1bd4e890df47d3b5eff3e5bded3b3d10
+FROM node:18.13.0-alpine@sha256:fda98168118e5a8f4269efca4101ee51dd5c75c0fe56d8eb6fad80455c2f5827
 
 ARG USERNAME=nonroot
 ARG USERHOME=/home/${USERNAME}
