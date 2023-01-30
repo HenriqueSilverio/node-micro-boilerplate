@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  boilerplate:
+    env_file:
+      - .env
+    build:
+      context: .
+    image: boilerplate
