@@ -23,7 +23,7 @@
     "require-env": "^0.2.1"
   },
   "devDependencies": {
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.4.0",
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1"
