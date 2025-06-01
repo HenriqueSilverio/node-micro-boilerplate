@@ -10,7 +10,7 @@
   "main": "./src/index.mjs",
   "scripts": {
     "start": "node ./src/index.mjs",
-    "start:dev": "node --watch --require dotenv/config ./src/index.mjs",
+    "start:dev": "node --watch --env-file=.env ./src/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
