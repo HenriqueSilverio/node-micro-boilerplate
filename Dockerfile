@@ -1,4 +1,4 @@
-FROM node:18.13.0-alpine@sha256:fda98168118e5a8f4269efca4101ee51dd5c75c0fe56d8eb6fad80455c2f5827 AS build
+FROM node:22.16.0-alpine@sha256:41e4389f3d988d2ed55392df4db1420ad048ae53324a8e2b7c6d19508288107e AS build
 
 USER node
 
@@ -12,7 +12,7 @@ COPY --chown=node:node ["package.json", "package-lock.json", "/home/node/"]
 
 RUN npm ci --omit=dev
 
-FROM node:18.13.0-alpine@sha256:fda98168118e5a8f4269efca4101ee51dd5c75c0fe56d8eb6fad80455c2f5827
+FROM node:22.16.0-alpine@sha256:41e4389f3d988d2ed55392df4db1420ad048ae53324a8e2b7c6d19508288107e
 
 ARG USERNAME=nonroot
 ARG USERHOME=/home/${USERNAME}
@@ -44,4 +44,4 @@ USER ${USERNAME}
 
 ENTRYPOINT ["/sbin/tini", "--"]
 
-CMD ["node", "--experimental-specifier-resolution=node", "src/index"]
+CMD ["node", "src/index.mjs"]
