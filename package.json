@@ -4,13 +4,13 @@
   "description": "Minimal starter files to create a Node.js app.",
   "type": "module",
   "engines": {
-    "node": "^18.13",
-    "npm": "^8.19"
+    "node": "^22",
+    "npm": "^10"
   },
-  "main": "./src/index.js",
+  "main": "./src/index.mjs",
   "scripts": {
-    "start": "node --experimental-specifier-resolution=node ./src/index.js",
-    "start:dev": "node --watch --experimental-specifier-resolution=node --require dotenv/config ./src/index.js",
+    "start": "node ./src/index.mjs",
+    "start:dev": "node --watch --require dotenv/config ./src/index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
