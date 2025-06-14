@@ -10,7 +10,7 @@ Dockerfile
 docker-compose.yml
 
 .editorconfig
-.eslintrc.json
+eslint.config.mjs
 
 node_modules
 npm-debug.log
