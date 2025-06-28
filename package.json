@@ -23,7 +23,7 @@
     "require-env": "^0.2.1"
   },
   "devDependencies": {
-    "@eslint/js": "^9.28.0",
+    "@eslint/js": "^9.29.0",
     "@stylistic/eslint-plugin": "^4.4.1",
     "eslint": "^9.28.0",
     "eslint-plugin-jest": "^28.13.5",
