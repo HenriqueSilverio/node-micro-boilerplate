@@ -5,7 +5,7 @@
   "type": "module",
   "engines": {
     "node": "^22",
-    "npm": "^10"
+    "npm": "^11"
   },
   "main": "./src/index.mjs",
   "scripts": {
