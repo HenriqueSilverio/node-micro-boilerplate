@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Application",
+      "type": "node",
+      "request": "launch",
+      "restart": true,
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/src/index.mjs",
+      "runtimeArgs": [
+        "--watch",
+        "--env-file",
+        "${workspaceFolder}/.env"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**"
+      ]
+    },
+    {
+      "name": "All Tests",
+      "type": "node",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "runtimeArgs": [
+        "--experimental-vm-modules",
+        "--env-file",
+        "${workspaceFolder}/.env"
+      ],
+      "args": [
+        "--watch",
+        "--runInBand"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**"
+      ]
+    },
+    {
+      "name": "Current Tests",
+      "type": "node",
+      "request": "launch",
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "envFile": "${workspaceFolder}/.env",
+      "runtimeArgs": [
+        "--experimental-vm-modules",
+        "--env-file",
+        "${workspaceFolder}/.env"
+      ],
+      "args": [
+        "--watch",
+        "--runInBand",
+        "--runTestsByPath",
+        "${relativeFile}"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**"
+      ]
+    }
+  ]
+}
