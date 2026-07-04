@@ -4,7 +4,7 @@
   "description": "Minimal starter files to create a Node.js app.",
   "type": "module",
   "engines": {
-    "node": "^22",
+    "node": "^24",
     "npm": "^11"
   },
   "main": "./src/index.mjs",
